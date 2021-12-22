@@ -1,30 +1,67 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="nav" v-if="$route.name !== 'Home'">
+    <router-link id="watermark" to="/">stckoverflw.</router-link>
   </div>
   <router-view/>
 </template>
 
+<script>
+
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url('https://fonts.googleapis.com/css2?family=Gudea&family=Lato&family=Rubik&family=Source+Sans+Pro:wght@300&display=swap');
+
+/*
+    font-family: 'Gudea', sans-serif;
+
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Rubik', sans-serif;
+
+    font-family: 'Source Sans Pro', sans-serif;
+ */
+
+html {
+  background-color: #000000;
+  font-family: 'Rubik', sans-serif;
+  color: #FFFFFF;
 }
 
 #nav {
-  padding: 30px;
+  position: fixed;
+  right: 5%;
+  top: 8%;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+#watermark {
+  float: right;
+  text-decoration: none;
+  font-size: x-large;
+  color: #FFFFFF;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+a#watermark:hover::after {
+  content: "net";
 }
+a#watermark:hover {
+  animation: fadetextin .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+a#watermark {
+  animation: fadetextout .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+@keyframes fadetextin {
+  0% {transform: translateX(2ch);}
+  100% {transform: translateX(0ch);}
+}
+@keyframes fadetextout {
+  0% {transform: translateX(-2ch);}
+  100% {transform: translateX(0ch);}
+}
+
+.text-color-secondary {
+  color: #ff2d3c;
+}
+
 </style>
