@@ -56,12 +56,10 @@ import $ from 'jquery';
 })
 export default class Home extends Vue {
   mounted(): void {
-    $(document).ready(function(){
-      $(".mobile-tap-area").click(function(){
-        $(".toggle-mobile-first").toggle();
-        $(".toggle-mobile-second").toggle();
-      });
-    });
+    document.addEventListener("click", () => {
+      toggle('.toggle-mobile-first')
+      toggle('.toggle-mobile-second')
+    })
   }
 }
 
