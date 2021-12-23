@@ -167,7 +167,7 @@ export default class Home extends Vue {
   .tap-indication {
     text-align: center;
     width: 100%;
-    font-family: "Medium", serif;
+    font-family: 'Rubik', sans-serif;
     color: #ffffff;
     position: fixed;
     bottom: 4%;
