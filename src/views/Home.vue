@@ -84,7 +84,7 @@ export default class Home extends Vue {
     content:"StckOverflw";
   }
   .label-name:hover:after{
-    content:"Contact";
+    content:"Contact Me";
   }
 
   #about {
