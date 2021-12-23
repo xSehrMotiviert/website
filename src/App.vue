@@ -6,21 +6,20 @@
 </template>
 
 <script>
-
+  let text = ""
+  document.addEventListener('keydown', function (event) {
+    text += event.key
+    if (text.includes("apple")) {
+      window.location.href = "https://google.com"
+    }
+    if (text.includes("iphone")) {
+      window.location.href = "https://google.com/phone"
+    }
+  })
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Gudea&family=Lato&family=Rubik&family=Source+Sans+Pro:wght@300&display=swap');
-
-/*
-    font-family: 'Gudea', sans-serif;
-
-    font-family: 'Lato', sans-serif;
-
-    font-family: 'Rubik', sans-serif;
-
-    font-family: 'Source Sans Pro', sans-serif;
- */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 html {
   background-color: #000000;
@@ -35,19 +34,20 @@ html {
 }
 
 #watermark {
+  color: #FFFFFF;
   float: right;
   text-decoration: none;
   font-size: x-large;
-  color: #FFFFFF;
 }
-
-a#watermark:hover::after {
+#watermark:hover::after {
+  color: #FFFFFF;
   content: "net";
 }
-a#watermark:hover {
+
+#watermark:hover {
   animation: fadetextin .6s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
-a#watermark {
+#watermark {
   animation: fadetextout .6s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
@@ -60,8 +60,28 @@ a#watermark {
   100% {transform: translateX(0ch);}
 }
 
-.text-color-secondary {
-  color: #ff2d3c;
+.vertical-center {
+  position: absolute;
+  height: 100%;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  -webkit-align-items: center; /* Safari */
+  align-items: center;
+  transform: translateY(-5%);
+}
+
+.text-color-white {
+  color: #ffffff;
+}
+.text-color-red {
+  color: #ea0f1e;
+}
+
+/* ------ Links ------ */
+a, a:after, a:visited {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
 }
 
 </style>
