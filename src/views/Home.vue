@@ -22,19 +22,19 @@
       <div class="vertical-center">
         <h1>
           <div style="width: max-content" class="hide-text-block" id="about">
-            <router-link to="about/">
+            <router-link to="About">
               <div class="animate text-color-white on-hover hide-web label-hello"></div>
               <div class="animate text-color-white on-hover hide-mobile toggle-mobile-second">About</div>
             </router-link>
           </div>
           <div style="width: max-content" class="hide-text-block" id="work">
-            <router-link to="work/">
+            <router-link to="Work">
               <div class="animate text-color-red on-hover delay04 hide-web label-iam"></div>
               <div class="animate text-color-red on-hover delay04 hide-mobile toggle-mobile-second">Work</div>
             </router-link>
           </div>
           <div class="hide-text-block" id="contact">
-            <router-link to="contact/">
+            <router-link to="Contact">
               <div class="animate text-color-red on-hover delay08 hide-web label-name"></div>
               <div class="animate text-color-red on-hover delay08 hide-mobile toggle-mobile-second">Contact</div>
             </router-link>
