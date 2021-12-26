@@ -49,6 +49,7 @@
 import {Options, Vue} from 'vue-class-component';
 
 function toggle(selector: string) {
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const elems = document.querySelectorAll<HTMLDivElement>(selector)!
   for (const elem of elems) {
     const style = getComputedStyle(elem)
@@ -61,7 +62,7 @@ function toggle(selector: string) {
 })
 export default class Home extends Vue {
   mounted(): void {
-    document.querySelector(".mobile-tap-area")!.addEventListener("click", () => {
+    document.querySelector(".mobile-tap-area")?.addEventListener("click", () => {
       toggle('.toggle-mobile-first')
       toggle('.toggle-mobile-second')
     })
@@ -189,37 +190,4 @@ export default class Home extends Vue {
   }
 }
 
-.animate {
-  animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
-  animation-fill-mode: backwards;
-}
-
-@keyframes animate {
-  0% {
-    opacity: 0;
-    transform: translateY(30vh);
-  }
-  /* 	0% {transform: translateY(100%);} */
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-@keyframes reduce-padding {
-  100% {
-    padding-right: 0
-  }
-}
-
-/* Delay */
-.delay04 {
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s;
-}
-
-.delay08 {
-  -webkit-animation-delay: .8s;
-  animation-delay: .8s;
-}
 </style>
