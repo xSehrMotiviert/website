@@ -116,7 +116,6 @@ h1.subpage-title {
 a, a:after, a:visited {
   text-decoration: none;
   cursor: pointer;
-  color: #000000;
 }
 
 /* Delay */

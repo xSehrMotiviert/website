@@ -23,6 +23,11 @@
         with scalable backend that stays online to ensure a great user experience.
       </p>
     </div>
+    <div class="subpage-text animate delay1">
+      <p>
+        If you want to contact me click <router-link class="text-color-red" to="contact">here</router-link>
+      </p>
+    </div>
   </div>
 </template>
 
