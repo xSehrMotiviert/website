@@ -22,22 +22,22 @@
       <div class="vertical-center">
         <h1>
           <div style="width: max-content" class="hide-text-block" id="about">
-            <a href="about/">
+            <router-link to="about">
               <div class="animate text-color-white on-hover hide-web label-hello"></div>
               <div class="animate text-color-white on-hover hide-mobile toggle-mobile-second">About</div>
-            </a>
+            </router-link>
           </div>
           <div style="width: max-content" class="hide-text-block" id="work">
-            <a href="work/">
+            <router-link to="work">
               <div class="animate text-color-red on-hover delay04 hide-web label-iam"></div>
               <div class="animate text-color-red on-hover delay04 hide-mobile toggle-mobile-second">Work</div>
-            </a>
+            </router-link>
           </div>
           <div class="hide-text-block" id="contact">
-            <a href="contact/">
+            <router-link to="contact">
               <div class="animate text-color-red on-hover delay08 hide-web label-name"></div>
               <div class="animate text-color-red on-hover delay08 hide-mobile toggle-mobile-second">Contact</div>
-            </a>
+            </router-link>
           </div>
         </h1>
       </div>
@@ -49,6 +49,7 @@
 import {Options, Vue} from 'vue-class-component';
 
 function toggle(selector: string) {
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const elems = document.querySelectorAll<HTMLDivElement>(selector)!
   for (const elem of elems) {
     const style = getComputedStyle(elem)
@@ -61,7 +62,7 @@ function toggle(selector: string) {
 })
 export default class Home extends Vue {
   mounted(): void {
-    document.querySelector(".mobile-tap-area")!.addEventListener("click", () => {
+    document.querySelector(".mobile-tap-area")?.addEventListener("click", () => {
       toggle('.toggle-mobile-first')
       toggle('.toggle-mobile-second')
     })
@@ -189,37 +190,4 @@ export default class Home extends Vue {
   }
 }
 
-.animate {
-  animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
-  animation-fill-mode: backwards;
-}
-
-@keyframes animate {
-  0% {
-    opacity: 0;
-    transform: translateY(30vh);
-  }
-  /* 	0% {transform: translateY(100%);} */
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-@keyframes reduce-padding {
-  100% {
-    padding-right: 0
-  }
-}
-
-/* Delay */
-.delay04 {
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s;
-}
-
-.delay08 {
-  -webkit-animation-delay: .8s;
-  animation-delay: .8s;
-}
 </style>
