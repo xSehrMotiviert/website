@@ -88,7 +88,7 @@ h1.subpage-title {
 .subpage-text {
   color: #FFFFFF;
   max-width: 50em;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 1;
   margin-left: 10vmin;
   margin-right: 10vmin;

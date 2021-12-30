@@ -1,16 +1,16 @@
 <template>
-  <div class="hide-mobile mobile-tap-area" v-on:click="select">
+  <div class="hide-mobile mobile-tap-area" v-on:click="mobileTapped = !mobileTapped">
     <div class="max-width">
       <div class="vertical-center">
         <h1>
           <div class="text-color-white hide-text-block">
-            <div class="animate toggle-mobile-first" v-if="!data().mobileTapped">Hey</div>
+            <div class="animate toggle-mobile-first" v-show="!mobileTapped">Hey</div>
           </div>
           <div class="text-color-red hide-text-block">
-            <div class="animate delay04 toggle-mobile-first" v-if="!data().mobileTapped">I am</div>
+            <div class="animate delay04 toggle-mobile-first" v-show="!mobileTapped">I am</div>
           </div>
           <div class="text-color-red hide-text-block">
-            <div class="animate delay08 toggle-mobile-first" v-if="!data().mobileTapped">StckOverflw</div>
+            <div class="animate delay08 toggle-mobile-first" v-show="!mobileTapped">StckOverflw</div>
           </div>
         </h1>
       </div>
@@ -24,19 +24,19 @@
           <div style="width: max-content" class="hide-text-block" id="about">
             <router-link to="about">
               <div class="animate text-color-white on-hover hide-web label-hello"></div>
-              <div class="animate text-color-white on-hover hide-mobile toggle-mobile-second" v-if="data().mobileTapped">About</div>
+              <div class="animate text-color-white on-hover hide-mobile toggle-mobile-second" v-show="mobileTapped">About</div>
             </router-link>
           </div>
           <div style="width: max-content" class="hide-text-block" id="work">
             <router-link to="work">
               <div class="animate text-color-red on-hover delay04 hide-web label-iam"></div>
-              <div class="animate text-color-red on-hover delay04 hide-mobile toggle-mobile-second" v-if="data().mobileTapped">Work</div>
+              <div class="animate text-color-red on-hover delay04 hide-mobile toggle-mobile-second" v-show="mobileTapped">Work</div>
             </router-link>
           </div>
           <div class="hide-text-block" id="contact">
             <router-link to="contact">
               <div class="animate text-color-red on-hover delay08 hide-web label-name"></div>
-              <div class="animate text-color-red on-hover delay08 hide-mobile toggle-mobile-second" v-if="data().mobileTapped">Contact</div>
+              <div class="animate text-color-red on-hover delay08 hide-mobile toggle-mobile-second" v-show="mobileTapped">Contact</div>
             </router-link>
           </div>
         </h1>
@@ -48,22 +48,11 @@
 <script lang="ts">
 import {Options, Vue} from 'vue-class-component';
 
-let mobileTapped = false
-
 @Options({
   components: {},
 })
 export default class Home extends Vue {
-
-  data() {
-    return {
-      mobileTapped: false
-    }
-  }
-
-  select(): void {
-    this.data().mobileTapped = !this.data().mobileTapped
-  }
+  private mobileTapped = false
 }
 
 </script>
@@ -118,7 +107,7 @@ export default class Home extends Vue {
 /* Mobile */
 
 .toggle-mobile-first {
-  font-size: 12vmin;
+  font-size: 13vmin;
 }
 
 .max-width {

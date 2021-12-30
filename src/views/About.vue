@@ -3,7 +3,7 @@
     <h1 class="subpage-title animate">About</h1>
     <div class="subtitle animate delay02">
       <p>
-        Hey, I am StckOverflw
+        Hey, I am <span class="text-color-red name"></span>
       </p>
       <p class="desc">
         Experienced full-stack developer based in germany. <br>
@@ -37,15 +37,22 @@
   }
   .subtitle {
     color: #FFFFFF;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     margin-left: 10vmin;
   }
   .subtitle .desc {
     color: #FFFFFF;
-    font-size: .8em;
+    font-size: 1.7rem;
     font-weight: lighter;
-    margin-top: -1.5%;
-    margin-bottom: 3%;
+    margin-top: -1.5vh;
+    margin-bottom: 3vh;
+  }
+
+  .name::before {
+    content: "StckOverflw";
+  }
+  .name:hover::before {
+    content: "Emma";
   }
 </style>
