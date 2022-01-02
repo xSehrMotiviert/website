@@ -3,7 +3,7 @@
     <h1 class="subpage-title animate">About</h1>
     <div class="subtitle animate delay02">
       <p>
-        Hey, I am <span class="text-color-red name"></span>
+        Hey, I am <span class="text-color-secondary name"></span>
       </p>
       <p class="desc">
         Experienced full-stack developer based in germany. <br>
@@ -25,7 +25,7 @@
     </div>
     <div class="subpage-text animate delay1">
       <p>
-        If you want to contact me click <router-link class="text-color-red" to="contact">here</router-link>
+        If you want to contact me click <router-link class="text-color-secondary" to="contact">here</router-link>
       </p>
     </div>
   </div>

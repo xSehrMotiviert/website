@@ -6,10 +6,10 @@
           <div class="text-color-white hide-text-block">
             <div class="animate toggle-mobile-first" v-show="!mobileTapped">Hey</div>
           </div>
-          <div class="text-color-red hide-text-block">
+          <div class="text-color-secondary hide-text-block">
             <div class="animate delay04 toggle-mobile-first" v-show="!mobileTapped">I am</div>
           </div>
-          <div class="text-color-red hide-text-block">
+          <div class="text-color-secondary hide-text-block">
             <div class="animate delay08 toggle-mobile-first" v-show="!mobileTapped">StckOverflw</div>
           </div>
         </h1>
@@ -29,14 +29,14 @@
           </div>
           <div style="width: max-content" class="hide-text-block" id="work">
             <router-link to="work">
-              <div class="animate text-color-red on-hover delay04 hide-web label-iam"></div>
-              <div class="animate text-color-red on-hover delay04 hide-mobile toggle-mobile-second" v-show="mobileTapped">Work</div>
+              <div class="animate text-color-secondary on-hover delay04 hide-web label-iam"></div>
+              <div class="animate text-color-secondary on-hover delay04 hide-mobile toggle-mobile-second" v-show="mobileTapped">Work</div>
             </router-link>
           </div>
           <div class="hide-text-block" id="contact">
             <router-link to="contact">
-              <div class="animate text-color-red on-hover delay08 hide-web label-name"></div>
-              <div class="animate text-color-red on-hover delay08 hide-mobile toggle-mobile-second" v-show="mobileTapped">Contact</div>
+              <div class="animate text-color-secondary on-hover delay08 hide-web label-name"></div>
+              <div class="animate text-color-secondary on-hover delay08 hide-mobile toggle-mobile-second" v-show="mobileTapped">Contact</div>
             </router-link>
           </div>
         </h1>

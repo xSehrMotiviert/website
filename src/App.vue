@@ -108,8 +108,8 @@ h1.subpage-title {
 .text-color-white {
   color: #ffffff;
 }
-.text-color-red {
-  color: #ea0f1e;
+.text-color-secondary {
+  color: #7e18ec;
 }
 
 /* ------ Links ------ */
