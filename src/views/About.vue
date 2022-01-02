@@ -35,12 +35,6 @@
   .about {
     justify-content: center;
   }
-  .subtitle {
-    color: #FFFFFF;
-    font-size: 3em;
-    font-weight: bold;
-    margin-left: 10vmin;
-  }
   .subtitle .desc {
     color: #FFFFFF;
     font-size: 1.7rem;
