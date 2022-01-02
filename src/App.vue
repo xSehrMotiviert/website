@@ -85,6 +85,13 @@ h1.subpage-title {
   margin-top: 3ch;
 }
 
+.subtitle {
+  color: #FFFFFF;
+  font-size: 3em;
+  font-weight: bold;
+  margin-left: 10vmin;
+}
+
 .subpage-text {
   color: #FFFFFF;
   max-width: 50em;
@@ -108,8 +115,8 @@ h1.subpage-title {
 .text-color-white {
   color: #ffffff;
 }
-.text-color-red {
-  color: #ea0f1e;
+.text-color-secondary {
+  color: #7e18ec;
 }
 
 /* ------ Links ------ */
@@ -124,5 +131,10 @@ a, a:after, a:visited {
 .delay06 { animation-delay: .6s; }
 .delay08 { animation-delay: .8s; }
 .delay1 { animation-delay: 1s; }
+.delay12 { animation-delay: 1.2s; }
+.delay14 { animation-delay: 1.4s; }
+.delay16 { animation-delay: 1.6s; }
+.delay18 { animation-delay: 1.8s; }
+.delay2 { animation-delay: 2s; }
 
 </style>
