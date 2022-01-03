@@ -10,20 +10,24 @@
         System administrator and DevOps engineer.
       </p>
     </div>
-
     <div class="subpage-text animate delay06">
+      <p>
+        I'm focusing on collaborating with mainly minecraft content creators and their communitys and work on minecraft, web and discord bot development
+      </p>
+    </div>
+    <div class="subpage-text animate delay08">
       <p>
         I don't want to define myself by the work I've done or skills I have,
         I like to define myself by the work I want to do and the skills I can learn from doing that.
       </p>
     </div>
-    <div class="subpage-text animate delay08">
+    <div class="subpage-text animate delay1">
       <p>
         My proficiency in full-stack development and system administration, though, allows me to build elegant applications
         with scalable backend that stays online to ensure a great user experience.
       </p>
     </div>
-    <div class="subpage-text animate delay1">
+    <div class="subpage-text animate delay12">
       <p>
         If you want to contact me click <router-link class="text-color-secondary" to="contact">here</router-link>
       </p>
