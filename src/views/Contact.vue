@@ -43,8 +43,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import {Vue} from "vue-class-component";
+<script>
 import ClipboardJS from "clipboard";
 
 const clipboard = new ClipboardJS('.copy-email', {
@@ -60,13 +59,9 @@ clipboard.on('error', function(e) {
   console.log(e);
 });
 
-export default class Home extends Vue {
+import {Vue} from 'vue-class-component';
 
-  copy(text: string): void {
-    new ClipboardJS('.btn');
-    navigator.clipboard.writeText(text);
-  }
-}
+export default class Contact extends Vue { }
 </script>
 
 <style scoped>
