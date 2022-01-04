@@ -48,7 +48,7 @@ import ClipboardJS from "clipboard";
 
 const clipboard = new ClipboardJS('.copy-email', {
   text: function () {
-    return 'stckoverflw@gmail.com';
+    return 'business@stckoverflw.net';
   }
 });
 
@@ -66,7 +66,7 @@ export default class Contact extends Vue { }
 
 <style scoped>
   .label-email:before {
-    content: "stckoverflw@gmail.com";
+    content: "business@stckoverflw.net";
   }
   .label-email:hover:before {
     content: "Click to copy to clipboard";
