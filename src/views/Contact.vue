@@ -8,7 +8,7 @@
     </div>
     <div class="subpage-text animate delay04">
       <p>
-        I love to collaborate with minecraft content creators and help to create the best content possible!
+        I love to collaborate with content creators and help to create the best content possible!
       </p>
     </div>
     <div class="subpage-text animate delay08">

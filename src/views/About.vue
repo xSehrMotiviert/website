@@ -12,7 +12,7 @@
     </div>
     <div class="subpage-text animate delay06">
       <p>
-        I'm focusing on collaborating with mainly minecraft content creators and their communitys and work on minecraft, web and discord bot development
+        I'm focusing on collaborating with mainly minecraft content creators and their communitys. I work on minecraft, web and discord bot development
       </p>
     </div>
     <div class="subpage-text animate delay08">
